@@ -33,18 +33,20 @@ O arquivo `Principal.java` contém a implementação do programa, demonstrando a
 
 ## Como executar
 
-É necessário ter o Java Development Kit (JDK) instalado.
+É necessário ter o Java Development Kit (JDK) e o Apache Maven instalados. O projeto contêm o arquivo `pom.xml` na raiz do diretório.
 
-**1. Compile o programa:**
+**1. Compile o projeto**
 
 ```bash
-javac Principal.java
+mvn compile
 ```
 
-**2. Execute o programa:**
+O Maven compila os arquivos-fonte do projeto e verifica se existem erros de compilação.
+
+**2. Execute o programa**
 
 ```bash
-java Principal
+mvn exec:java -Dexec.mainClass="Principal"
 ```
 
 ## Saída esperada
